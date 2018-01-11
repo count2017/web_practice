@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p>访问 JOSN 对象数组值。</p>
+
+		<p id="demo"></p>
+		
+		<script>
+		
+			var myObj, x;
+			myObj = {
+				"name":"网站",
+				"num":3,
+				"sites":[ "Google", "Runoob", "Taobao" ]
+			}
+			x = myObj.sites[0];
+			document.getElementById("demo").innerHTML = x;
+		
+		</script>
+	</body>
+</html>

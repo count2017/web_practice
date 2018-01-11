@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button id="myLink">点击</button>
+		
+		<script type="text/javascript">
+			var link = document.getElementById("myLink");
+			link.onclick = function(event){
+				event = EventUtil.getEvent(event);
+				EventUtil.preventDefault(event);
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h2>JSON.stringify 将 Date 对象转换为字符串</h2>
+
+		<p id="demo"></p>
+		
+		<script>
+		
+			var obj = { "name":"Runoob", "initDate":new Date(), "site":"www.runoob.com"};
+			var myJSON = JSON.stringify(obj);
+			document.getElementById("demo").innerHTML = myJSON;
+		
+		</script>
+	</body>
+</html>

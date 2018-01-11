@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p>全局变量计数。</p>
+		<button type="button" onclick="myFunction()">计数!</button>
+		<p id="demo">0</p>
+		<script>
+			var counter = 0;
+			function add() {
+			    return counter += 1;
+			}
+			function myFunction(){
+			    document.getElementById("demo").innerHTML = add();
+			}
+		</script>
+	</body>
+</html>

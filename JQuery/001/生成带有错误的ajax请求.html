@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					$.ajax({url:"wrongfile.txt",error:function(xhr){
+						alert("错误提示： " + xhr.status + " " + xhr.statusText);
+					}});
+			  });
+			});
+		</script>
+	</head>
+	<body>
+		
+		<p>艺术家</p>
+		<div></div>
+		<button>获取 CD 信息</button>
+	</body>
+</html>

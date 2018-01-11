@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#btn1").click(function(){
+					$("div").data("greeting", "Hello World");
+				});
+				$("#btn2").click(function(){
+					alert($("div").data("greeting"));
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<button id="btn1">将数据附加到div元素</button><br>
+		<button id="btn2">获取数据附加到div元素</button>
+		<div></div>
+	</body>
+</html>

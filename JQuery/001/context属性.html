@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("div").append("<p>" + $("div").context + "</p>").append("<p>" + $("div",document.body).context.nodeName + "</p>");
+			}); 
+		</script>
+	</head>
+	<body>
+		<span>内容: <div></div></span>
+		<span><b>注意:</b>jQuery 1.10版本的上下文属性被弃用。</span>
+	</body>
+</html>

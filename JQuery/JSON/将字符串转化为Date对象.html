@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<p id="demo"></p>
+
+		<script>
+		
+			var text = '{ "name":"Runoob", "initDate":"2013-12-14", "site":"www.runoob.com"}';
+			var obj = JSON.parse(text);
+			obj.initDate = new Date(obj.initDate);
+			
+			document.getElementById("demo").innerHTML = obj.name + "创建日期: " + obj.initDate;
+		
+		</script>
+	</body>
+</html>

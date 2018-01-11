@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<p>删除数组元素</p>
+		
+		<p id="demo"></p>
+		
+		<script>
+			var myObj, i, x = "";
+			myObj = {
+				"name":"网站",
+				"num":3,
+				"sites":[ "Google", "Runoob", "Taobao" ]
+			};
+			delete myObj.sites[1];
+			
+			for (i in myObj.sites) {
+			    x += myObj.sites[i] + "<br>";
+			}
+			
+			document.getElementById("demo").innerHTML = x;
+		
+		</script>
+	</body>
+</html>

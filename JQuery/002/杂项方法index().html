@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("li").click(function(){
+					alert($(this).index());
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p>点击获取列表项的索引位置,相对于它的兄弟元素</p>
+		<ul>
+			<li>Coffee</li>
+			<li>Milk</li>
+			<li>Soda</li>
+		</ul
+	</body>
+</html>

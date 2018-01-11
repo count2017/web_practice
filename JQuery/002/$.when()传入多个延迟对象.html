@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		
+	</head>
+	<body>
+		<script>
+			$(function () { 
+				var d1 = $.Deferred();
+				var d2 = $.Deferred();
+				$.when( d1, d2 ).done(function ( v1, v2 ) {
+					alert( v1 ); // "Fish"
+					alert( v2 ); // "Pizza"
+				});
+				d1.resolve( "Fish" );
+				d2.resolve( "Pizza" );
+			})
+		</script>
+	</body>
+</html>

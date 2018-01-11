@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			var i = 0;
+			function convert(){
+				if(i%2 == 0){
+					document.getElementById('id1').style.color='red'
+					i++;
+				}else{
+					document.getElementById('id1').style.color='black';
+					i--;
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id="id1">我的标题 1</h1>
+		<button type="button" onclick="convert()">
+		点我!</button>
+	</body>
+</html>

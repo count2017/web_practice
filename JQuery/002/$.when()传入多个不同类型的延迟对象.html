@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<script>
+			$(function () { 
+				var d1 = $.Deferred();
+				var d2 = $.Deferred();
+				var d3 = $.Deferred();
+				$.when( d1, d2, d3 ).done(function ( v1, v2, v3 ) {
+					alert( v1 ); // v1 is undefined
+					alert( v2 ); // v2 is "abc"
+					alert( v3 ); // v3 is an array [ 1, 2, 3, 4, 5 ]
+				});
+				d1.resolve();
+				d2.resolve( "abc" );
+				d3.resolve( 1, 2, 3, 4, 5 );
+				
+			})
+		</script>
+	</body>
+</html>

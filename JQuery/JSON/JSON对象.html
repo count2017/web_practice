@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<p>你可以使用点号（.）来访问 JSON 对象的值：</p>
+
+		<p id="demo"></p>
+		
+		<script>
+		
+			var myObj, x;
+			myObj = { "name":"runoob", "alexa":10000, "site":null };
+			x = myObj.name;
+			document.getElementById("demo").innerHTML = x;
+		
+		</script>
+	</body>
+</html>

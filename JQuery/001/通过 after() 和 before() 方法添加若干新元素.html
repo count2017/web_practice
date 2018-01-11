@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script>
+			function afterText(){
+				var txt1="<b>I </b>";                    // 使用 HTML 创建元素
+				var txt2=$("<i></i>").text("love ");     // 使用 jQuery 创建元素
+				var txt3=document.createElement("big");  // 使用 DOM 创建元素
+				txt3.innerHTML="jQuery!";
+				$("img").after(txt1,txt2,txt3);          // 在图片后添加文本
+			}
+		</script>
+	</head>
+	<body>
+		<img src="/images/logo2.png" >
+		<br><br>
+		<button onclick="afterText()">之后插入</button>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			  $("button").click(function(){
+			    alert($(".hot").index($("#favorite")));
+			  });
+			});
+		</script>
+	</head>
+	<body>
+		<p>单击按钮来获得id =“favorite”的元素的索引,相对于jQuery选择器(类=“hot”):</p>
+		<button>获取下标</button>
+		<ul>
+			<li>Milk</li>
+			<li class="hot">Tea</li>
+			<li class="hot" id="favorite">Coffee</li>
+		</ul>
+	</body>
+</html>

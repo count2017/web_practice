@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<p>修改 JSON 对象数组值。</p>
+		
+		<p id="demo"></p>
+		
+		<script>
+		
+			var myObj, i, x = "";
+			myObj = {
+				"name":"网站",
+				"num":3,
+				"sites":[ "Google", "Runoob", "Taobao" ]
+			};
+			 myObj.sites[1] = "Github";
+			
+			for (i in myObj.sites) {
+			    x += myObj.sites[i] + "<br>";
+			}
+			
+			document.getElementById("demo").innerHTML = x;
+		
+		</script>
+	</body>
+</html>

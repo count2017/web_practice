@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<script>
+			$(function () { 
+				$.when($.ajax("/page1.php"), $.ajax("/page2.php")).then(function(data, textStatus, jqXHR){
+					alert(jqXHR.status); }, function(obj){
+					alert(obj.statusText);
+				});
+			})
+		</script>
+	</body>
+</html>

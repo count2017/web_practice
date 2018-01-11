@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			  $("#btn1").click(function(){
+			    $("img").before("<b>之前</b>");
+			     alert(typeof jQuery);
+			  });
+			
+			  $("#btn2").click(function(){
+			    $("img").after("<i>之后</i>");
+			    alert(typeof $);
+			  });
+			});
+		</script>
+	</head>
+	<body>
+		<img src="/images/logo.png" >
+		<br><br>
+		<button id="btn1">之前插入</button>
+		<button id="btn2">之后插入</button>
+	</body>
+</html>

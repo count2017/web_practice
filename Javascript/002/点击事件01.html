@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<img src="../img/01.gif" width="100px" onload="alert('img loaded')"/><br />
+		djffajsdf<br />
+		<button id="myBtn">点击不啊</button>
+		<br />
+		<button  onclick="ss(this);">点击不啊2</button><br />
+		<button  id="hh">点击不啊3</button>
+		<script type="text/javascript">
+			var btn = document.getElementById("myBtn");
+			btn.addEventListener("click",function(){
+				alert(this.id);
+			},false);
+			function ss (ev){
+				alert(ev.type);
+			}
+		var but = document.getElementById("hh");
+		var a = 0;
+		var handler = function(event){
+			if(event.type == "click"){
+				if(a%2 == 0){
+					event.target.style.backgroundColor = "blue";
+					a++;
+				}else{
+					event.target.style.backgroundColor = "red";
+					a--;
+				}
+			}
+		}
+		but.onclick = handler;
+		document.body.onclick = function (event){
+			alert("body clicked");
+		}
+		</script>
+	</body>
+</html>

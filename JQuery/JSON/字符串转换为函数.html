@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h2>字符串转换为函数</h2>
+
+		<p id="demo"></p>
+		
+		<script>
+		
+			var text = '{ "name":"Runoob", "alexa":"function () {return 10000;}", "site":"www.runoob.com"}';
+			var obj = JSON.parse(text);
+			var sss = eval("2+3"); 
+			obj.alexa = eval("(" + obj.alexa + ")");
+			
+			document.getElementById("demo").innerHTML = obj.name + " Alexa 排名：" + obj.alexa()+"kk"+sss; 
+		
+		</script>
+	</body>
+</html>
